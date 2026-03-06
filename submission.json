@@ -1,11 +1,11 @@
 {
-  "student_id": "65xxxxxx",
-  "name": "ชื่อ นามสกุล",
-  "github_repo": "https://github.com/USERNAME/REPO-NAME",
-  "backend_base_url": "https://xxx.onrender.com",
-  "frontend_url": "https://xxx.netlify.app",
+  "student_id": "6604101344",
+  "name": "บวรพงศ์ นาคสุข",
+  "github_repo": "https://github.com/Bowonphong/Bowonphong-Naksuk-6604101344",
+  "backend_base_url": "https://bowonphong-naksuk-6604101344-1.onrender.com",
+  "frontend_url": "https://test060369.netlify.app/",
   "api": {
-    "health": "https://xxx.onrender.com/api/health",
-    "tasks": "https://xxx.onrender.com/api/tasks"
+    "health": "https://bowonphong-naksuk-6604101344-1.onrender.com/api/health",
+    "tasks": "https://bowonphong-naksuk-6604101344-1.onrender.com/api/tasks"
   }
 }
