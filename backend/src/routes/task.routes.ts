@@ -41,6 +41,24 @@ router.get('/', async (_req, res) => {
   }
 });
 
+// STATS (new)
+router.get('/stats', async (_req, res) => {
+  try {
+    const total = await prisma.task.count();
+    const latest = await prisma.task.findFirst({
+      orderBy: { createdAt: 'desc' },
+    });
+
+    res.json({
+      total,
+      latest: latest ? { id: latest.id, title: latest.title, createdAt: latest.createdAt } : null,
+    });
+  } catch (err) {
+    console.error('STATS error:', err);
+    res.status(500).json({ message: 'ไม่สามารถดึงสถิติได้' });
+  }
+});
+
 // READ ONE
 router.get('/:id', async (req, res) => {
   try {
